@@ -6,7 +6,8 @@ const reducer =(state,action)=>{
         case('setCurrentUser'):
         return {...state,currentUser:action.payload};
         case('showDialog'):
-        return {...state,showDialog:!state.showDialog}
+        const dialog= action.payload === null?state.dialog:action.payload;
+        return {...state,showDialog:!state.showDialog,dialog:dialog}
         default:
             return {...state,currentPage:action.type};
         

@@ -12,6 +12,7 @@ import Rides from './Components/Pages/Rides/rides';
 import Snacks from './Components/Pages/Snacks/Snacks';
 import Restarants from './Components/Pages/Restarants/Restarants';
 import Footer from './Components/Footer/Footer';
+import Dialog from './Components/Dialog/dialog';
 
 export const AppContext = React.createContext();
 
@@ -22,6 +23,8 @@ function App() {
 
       <div className="App">
         <Navbar  />
+        {state.showDialog &&<Dialog  classname={state.currentPage} desc={state.currentPage}/>}
+        {/* <Dialog  classname={state.currentPage} desc={state.currentPage}/> */}
         <Switch>
         <Route exact path='/' component={Hero} />
           <Route path='/home' component={Hero} />

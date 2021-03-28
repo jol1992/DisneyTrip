@@ -1,12 +1,19 @@
 import './dialog.css'
 import '../Pages/Rides/rides.css'
-const Dialog =({desc,handleClick,classname}) =>{
+import { useContext } from 'react'
+import { AppContext } from '../../App'
+const Dialog =() =>{
+    const {state,dispatch}=useContext(AppContext)
+    const handleClick =()=>{
+        dispatch({type:'showDialog'})
+    }
+    
     return(
         <div className={'dialog'}>
             <div className={'modal'}>
-                <div className={classname+" parkImg "}></div>
-               <p>{desc}</p>
-               <input/>
+                <div className={state.dialog.className+" parkImg "}></div>
+               <p>{state.dialog.desc}</p>
+               <select value={state.dialog.rides}/>
                <button onClick={handleClick}>Ok</button>
             </div>
         </div>

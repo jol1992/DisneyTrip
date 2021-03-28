@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 // import Select from "react-select/src/Select";
 import Header from "../../Body/MainContainer/Header/Header"
 import epcot from '../../../Images/epcot.PNG'
@@ -8,18 +8,23 @@ import hs from '../../../Images/hs.PNG'
 import { MenuItem } from "../../MenuItems/MenuItem"
 import './rides.css'
 import Dialog from "../../Dialog/dialog"
+import { AppContext } from "../../../App"
 
-const Ride = ({desc,img, list,classname }) =>{
-    const [showDialog,setShowDialog] =useState(false)
+const Ride = ({desc,classname }) =>{
+    const {state,dispatch}=useContext(AppContext);
     const handleClick =()=>{
-        setShowDialog(!showDialog)
+        const dialog={
+            className:classname,
+            desc:desc,
 
+        }
+        dispatch({type:'showDialog', payload:dialog})
     }
    return( <div onClick={handleClick} className={' menuItem ride-con'}>
        <div className={classname+" parkImg"}>
         <label>{desc}</label>
         </div>
-        {showDialog &&<Dialog hadleClick ={handleClick} classname={classname} desc={desc}/>}
+      
     </div>
    )
 }
@@ -36,11 +41,7 @@ const Rides = () => {
 
     useEffect(
         () => {
-            // getRides('http://touringplans.com/magic-kingdom/attractions.json',mkRides)
-            // getRides('http://touringplans.com/animal-kingdom/attractions.json',akRides)
-            // getRides('http://touringplans.com/hollywood-studios/attractions.json',hsRides)
-            // getRides('http://touringplans.com/epcot/attractions.json' ,epcotRides)
-            getUserPick()
+            // getUserPick()
 
         },[]
     )

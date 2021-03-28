@@ -6,11 +6,13 @@ import snacks from '../../Images/snacks.png'
 import { useContext } from 'react'
 import { AppContext } from '../../App'
 import { Link } from 'react-router-dom'
+import Dialog from '../Dialog/dialog'
 
 export const MenuItem = ({ img, desc }) => {
     const { state, dispatch } = useContext(AppContext)
     const handleClick = () => {
         dispatch({ type: desc })
+       
     }
 
     return (
@@ -23,6 +25,7 @@ export const MenuItem = ({ img, desc }) => {
 }
 
 const MenuItems = () => {
+    const {state,dispatch}=useContext(AppContext);
     return (
 
         <div className={'menu-con'}>
@@ -38,6 +41,7 @@ const MenuItems = () => {
             <Link to="/restarants">
                 <MenuItem desc={"Restarants"} img={chef} />
             </Link>
+           
         </div>
 
 
