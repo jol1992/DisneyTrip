@@ -1,0 +1,148 @@
+.nav-bar-con{
+    background-color: #393E8F;
+    font-family: disney;
+    line-height: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display:grid;
+    grid-template-columns:  1fr;  
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #12194A;
+    /* box-shadow:  10px 8px 10px #888888 */
+}
+
+.nav-wrapper{
+ display: grid;
+ grid-template-columns: auto 1fr;
+ align-items: center;
+ background-color: #393E8F;
+ padding: 5px 0;
+
+
+}
+.profilePic{
+    height: 60px;
+    width: 60px;
+    background-color: #F3CC64;
+    border-radius: 50%;
+    justify-self: end;
+    margin-right:2%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #12194A 2px solid;
+    align-content: end;
+    display: grid;
+    font-family: inherit;
+}
+
+.profilePic:hover{
+    border-color: whitesmoke;
+}
+.Justin{
+    background-image: linear-gradient(1deg,white,transparent),url('../../Images/Justin.JPG');
+}
+.Monique{
+    background-image: linear-gradient(1deg,white,transparent),url('../../Images/Monique.JPG');
+}
+.Gloria{
+    background-image: linear-gradient(1deg,white,transparent),url('../../Images/Gloria.jpg');
+}
+.Bianaca{
+    background-image: linear-gradient(1deg,white,transparent),url('../../Images/Bianaca.JPG');
+}
+
+.profilePic > p{
+    color: #12194A;
+}
+
+
+.nav-wrapper>a> h3:hover{
+    cursor: pointer;
+    color:#F3CC64
+}
+
+.ghost{
+    position: static;
+    z-index: 0;
+}
+
+@font-face{
+    font-family: disney;
+    src:url(../../Fonts/waltograph42.otf)
+}
+
+.nav-wrapper >a{
+    margin-left: 30%;
+}
+
+.nav-wrapper >a> h3{
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+    
+    
+}
+
+.Users-con{
+    display: grid;
+    background-color: #393d8f63;
+    grid-template-columns: repeat(1,1fr);
+    gap: 4px;
+    padding: 5px;
+    position: absolute;
+    top:77px;
+    right:0;
+    border: 2px #12194A solid;
+    z-index: -3;
+    font-family: disney;
+    border-radius: 5px;
+}
+
+.slide-out{
+    animation: fadeout 1s forwards ;
+}
+.slide-in{
+    animation: fadein-reveal 1s forwards ;
+}
+
+
+
+@keyframes fadein-reveal{
+
+    0%{
+        /* transform: scale(0); */
+        /* scale: 0; */
+        opacity: 0;
+        top:0px;
+        z-index: -1;
+    }
+
+    100%{
+        top:77px;
+        opacity: 1;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeout{
+
+    0%{
+        z-index: -1;
+    }
+
+    100%{
+        top:0px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+.hide{
+    display: none;
+  }
+
+

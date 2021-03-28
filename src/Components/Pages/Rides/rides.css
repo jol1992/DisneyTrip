@@ -1,0 +1,55 @@
+.ride-con > div>img{
+    /* display: grid; */
+    border-radius: 50%;
+    height: 200px; 
+    padding: 0;
+    
+}
+
+
+.ride-con > div{
+    display: grid;
+    align-content: center; 
+    justify-content: center;
+    margin: 20px;
+    
+}
+.ride-con > div> label{
+    position: relative;
+    color: white;
+    justify-self: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    z-index: 0;
+
+}
+.parkImg{
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat:none;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.parkImg:hover{
+    border:solid whitesmoke 2px;
+
+}
+.animalKingdom{
+    background: linear-gradient(349deg, #424242, transparent), url('../../../Images/ak.PNG');
+}
+.magicKingdom{
+    background: linear-gradient(349deg, #424242, transparent),url('../../../Images/mk.PNG');
+}
+.epcot{
+    background: linear-gradient(349deg, #424242, transparent),url('../../../Images/epcot.PNG');
+}
+
+.hollywoodStudio{
+    background: linear-gradient(349deg, #424242, transparent),url('../../../Images/hs.PNG');
+
+}
+
+
+

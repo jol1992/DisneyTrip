@@ -1,0 +1,74 @@
+ul{
+    
+   
+    /* margin: 5%; */
+    list-style: none;
+    padding: 0;
+    justify-content: left;
+}
+
+
+.list-con{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    grid-template-columns:1fr ;
+}
+.list-con>.list-items{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #12194A;
+    border-radius: 5px;
+    margin: 2%;
+}
+.list-intro{
+height: 300px;
+background-position: center 37%;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.rides{
+    background-image: linear-gradient(360deg, black, transparent),url('../../Images/slinky.jpg');
+}
+
+.check-list{
+    background-image: linear-gradient(360deg, black, transparent),url('../../Images/SorcererMickey.jpg');
+}
+.snacks{
+    background-image: linear-gradient(360deg, black, transparent),url('../../Images/snacksimage.jpeg');
+}
+.restarant{
+    background-image: linear-gradient(360deg, black, transparent),url('../../Images/chefmickey.jpg');
+}
+.list-intro >p{
+    font-family: disney;
+    font-size: 100px;
+    ;
+}
+
+.list-con>img{
+    height: auto;
+    width: auto;
+}
+.input-con{margin-right: 2%;
+    justify-self: end;
+}
+/* li{
+    padding: 10px;
+    text-align: left;
+    margin: 5%;
+    border-bottom: solid 2px rgb(44, 41, 41);
+    background-color: rgb(121, 46, 32);
+} */
+
+
+li{
+    display: flex;
+    align-items: center;
+    
+}

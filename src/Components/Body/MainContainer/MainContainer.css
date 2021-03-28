@@ -1,0 +1,9 @@
+.main-con{
+    display: grid;
+    grid-gap: 5%;
+    gap: 5%;
+   
+    
+    grid:1fr
+    
+}

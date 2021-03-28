@@ -1,0 +1,64 @@
+.Hero{
+    background:  linear-gradient(8deg, black, transparent),url('../../Images/Disney.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.Hero >div >h1{
+    font-size: 3rem;
+    display: inline-flex;
+    align-items: center;
+    margin:0
+    
+}
+.Hero >div >h1>p{
+    font-family: disney;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.Hero > div>p{
+    color: #F3CC64;
+    font-size: x-large;
+    font-weight: 900;
+
+}
+.Hero >div {
+    color: whitesmoke;
+    display: grid;
+    justify-content: center;
+
+    border-radius: 5px;
+    padding: 60px;
+    border: whitesmoke ;
+    line-height: 0;
+
+}
+
+@media only screen and (max-width:630px){
+    .Hero >div >h1{
+        font-size: 2rem;   
+    }
+    .Hero >div {
+        color: whitesmoke;
+        display: grid;
+        justify-content: space-evenly;
+        padding: 30px;
+
+    }
+
+    .Hero{
+        /* background:  url('../../Images/SorcererMickey.jpg'); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+    
+}

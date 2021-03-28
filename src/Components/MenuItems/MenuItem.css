@@ -1,0 +1,57 @@
+.menu-con{
+    display: grid;
+    grid-gap: 5%;
+    gap: 5%;
+    padding: 5%;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.menuItem{
+    background-color: #393E8F;
+    border-radius: 5px;
+    display: grid;
+    align-content: center;
+    justify-content: center ;
+    border: #12194A solid ;
+    font-family: disney;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.menuItem:hover{
+    background-color: #12194A;
+    color:black;
+    cursor: pointer;
+    border: #393E8F solid 3px ;
+    position: relative;
+    /* transform: scale(1.01); */
+    margin: -3px;
+}
+
+.menuItem:hover > .parkImg{
+    border:solid whitesmoke 2px;
+    /* margin: -2px; */
+    /* transform: scale(1); */
+    /* position: absolute; */
+
+}
+
+
+p{
+    text-align: center;
+    color: white;
+}
+
+img{
+    height: 200px;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width:630px){
+    img{
+        height: 150px;
+        padding-top: 20px;
+    }
+    
+}

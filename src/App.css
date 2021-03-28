@@ -1,0 +1,15 @@
+.App{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+ 
+}
+@font-face{
+  font-family: disney;
+  src:url(./Fonts/waltograph42.otf)
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
