@@ -40,6 +40,7 @@
 
 .profilePic:hover{
     border-color: whitesmoke;
+    cursor: pointer;
 }
 .Justin{
     background-image: linear-gradient(1deg,white,transparent),url('../../Images/Justin.JPG');
