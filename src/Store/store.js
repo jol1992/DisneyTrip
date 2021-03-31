@@ -1,7 +1,7 @@
  const store ={
     currentPage: 'home',
     showUsers:null,
-    currentUser: localStorage.getItem('user') !== null? localStorage.getItem('user'):'Justin',
+    currentUser: localStorage.getItem('user'),
     showDialog:false,
     dialog:{},
 }

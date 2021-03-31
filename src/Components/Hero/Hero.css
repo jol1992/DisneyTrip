@@ -13,6 +13,9 @@
     border-radius: 5px;
     box-shadow:0 11px 20px 11px grey;
 }
+span{
+    display: inline-block;
+}
 
 .Hero >div >h1{
     font-size: 3rem;

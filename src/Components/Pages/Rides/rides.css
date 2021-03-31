@@ -21,6 +21,7 @@
     font-weight: bolder;
     font-size: 3rem;
     z-index: 0;
+    text-align: center;
 
 }
 .parkImg{
@@ -52,4 +53,18 @@
 }
 
 
-
+@media only screen and (max-width:1000px){
+    .parkImg{
+        height: 200px;
+        width:200px;
+        padding-top: 20px;
+        background-size: cover;
+        
+    }
+    .ride-con > div> label{
+        font-size: 2rem;
+    
+    }
+    
+    
+}

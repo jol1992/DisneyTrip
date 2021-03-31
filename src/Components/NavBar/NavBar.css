@@ -27,7 +27,6 @@
     width: 60px;
     background-color: #F3CC64;
     border-radius: 50%;
-    justify-self: end;
     margin-right:2%;
     background-position: center;
     background-size: cover;
@@ -63,6 +62,9 @@
 .nav-wrapper>a> h3:hover{
     cursor: pointer;
     color:#F3CC64
+}
+.nav-wrapper >div{
+    justify-self: flex-end;
 }
 
 .ghost{

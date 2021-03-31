@@ -1,0 +1,61 @@
+
+.welcome-scr{
+    background-color: chartreuse;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: disney;
+    position: absolute;
+    z-index: 1;
+    
+}
+.welcome-scr> h1{
+    justify-items: center;
+    justify-self: center;
+    font-size: 3rem;
+}
+.user-con{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    
+    /* position: absolute; */
+}
+
+.login-user{
+    height: 300px;
+    width: 300px;
+    /* background: url('../../../Images/Justin.JPG'); */
+    /* background-color: cornflowerblue; */
+    
+    
+}
+
+.Justin{
+    background: url('../../../Images/Justin.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+.Monique{
+    background: url('../../../Images/Monique.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+.Gloria{
+    background: url('../../../Images/Gloria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+.Bianaca{
+    background: url('../../../Images/Bianaca.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
